@@ -14,3 +14,9 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+1. Create TODO : onPress of floating button.
+2. Update TODO: onLongPress of todo item.
+3. Delete TODO: onPress of todo item.
+4. TODO DETAILS SCREEN : on click of menu item.
