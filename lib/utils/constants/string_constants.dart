@@ -14,4 +14,5 @@ class StringConstants {
   static const String userNameLargeLengthValidateError =
       "username cannot be more than 60 Character";
   static const String upiValidateError = "your UPI is invalid";
+  static const String createTodo = "Create TODO";
 }
