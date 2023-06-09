@@ -71,24 +71,12 @@ class ToDoView extends ConsumerWidget {
                 itemCount: data.todos!.length,
                 itemBuilder: (context, index) {
                   return GestureDetector(
-                    onLongPress: () {
-                      // ref.read(todoViewModelProvider.notifier).updateTodo(
-                      //     data.todos![index],
-                      //     Todos(
-                      //         id: data.todos![index].id,
-                      //         todo: "Afrin updated one todo",
-                      //         completed: false,
-                      //         userId: data.todos![index].userId));
-                    },
                     onTap: () {
                       Application.router.navigateTo(
                           context, RouteConstants.todoDetails,
                           transition: TransitionType.fadeIn,
                           routeSettings:
                               RouteSettings(arguments: data.todos![index]));
-                      // ref
-                      //     .read(todoViewModelProvider.notifier)
-                      //     .removeTodo(data.todos![index]);
                     },
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
@@ -96,12 +84,6 @@ class ToDoView extends ConsumerWidget {
                         leading: Text(data.todos![index].todo!),
                         trailing: IconButton(
                           onPressed: () {
-                            // Application.router.navigateTo(
-                            //     context, RouteConstants.todoDetails,
-                            //     transition: TransitionType.fadeIn,
-                            //     routeSettings: RouteSettings(
-                            //         arguments: data.todos![index]));
-
                             showModalBottomSheet(
                                 context: context,
                                 isScrollControlled: true,
